@@ -56,7 +56,8 @@ const words = [
     "world",
 ];
 export default function App() {
-    const word = "hello";
+    const word = words[dayOfTheYear];
+
     const letters = word.split("");
     const [rows, setRows] = useState(
         new Array(NUMBER_OF_TRIES).fill(new Array(letters.length).fill(''))
